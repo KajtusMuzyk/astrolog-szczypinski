@@ -32,7 +32,7 @@ function App() {
         </header>
 
         <main className={"main-container"}>
-          <CatalogList/>
+          <CatalogList objects={objects} onSelectObject={setSelectedObject}/>
           <ObjectDetails/>
           <DiscoveryForm/>
         </main>
