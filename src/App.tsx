@@ -33,7 +33,7 @@ function App() {
 
         <main className={"main-container"}>
           <CatalogList objects={objects} onSelectObject={setSelectedObject}/>
-          <ObjectDetails/>
+          <ObjectDetails object={selectedObject}/>
           <DiscoveryForm/>
         </main>
       </div>
