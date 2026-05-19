@@ -24,6 +24,9 @@ function App() {
 
   const [objects,setObjects] = useState<ObjectInfo[]>(InitialObjects)
   const [selectedObject, setSelectedObject] = useState<ObjectInfo | null>(null)
+  const handleAddObject = (newObject: ObjectInfo)=> {
+    setObjects((prevObjects) => [newObject,...prevObjects])
+  }
   return (
     <>
       <div className={"app-container"}>
@@ -34,7 +37,7 @@ function App() {
         <main className={"main-container"}>
           <CatalogList objects={objects} onSelectObject={setSelectedObject}/>
           <ObjectDetails object={selectedObject}/>
-          <DiscoveryForm/>
+          <DiscoveryForm onAddObject={handleAddObject}/>
         </main>
       </div>
     </>
