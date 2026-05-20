@@ -12,9 +12,10 @@
   box-sizing: border-box;
 }
 .catalog-list, .object-details, .discovery-form {
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  border: 1px solid #333;
+  background-color: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
 }
 .catalog-list h2, .object-details h2, .discovery-form h2 {
   padding: 15px 20px;
@@ -52,7 +53,14 @@
   margin: 0;
   font-size: 1rem;
   color: #eee;
+  text-align: left;
 }
 .card-details, .discovery-form form {
   padding: 20px;
+}
+.discovery-form button {
+  display: block;
+  margin: 15px auto 0 auto;
+  padding: 10px 30px;
+  width: fit-content;
 }
