@@ -18,7 +18,7 @@ export default function DiscoveryForm({ onAddObject }: DiscoveryFormProps) {
             name,
             type,
             distance,
-            image: image.trim() !== '' ? image : 'https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800'
+            image: image.trim() !== '' ? image : 'https://images.unsplash.com/photo-1594322436404-5a0526db4d13?w=1200&auto=format&fit=crop&q=80'
         }
 
         onAddObject(newDiscovery);

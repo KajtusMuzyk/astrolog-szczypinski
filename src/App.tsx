@@ -25,7 +25,7 @@ function App() {
   const [objects,setObjects] = useState<ObjectInfo[]>(InitialObjects)
   const [selectedObject, setSelectedObject] = useState<ObjectInfo | null>(null)
   const handleAddObject = (newObject: ObjectInfo)=> {
-    setObjects((prevObjects) => [newObject,...prevObjects])
+    setObjects((prevObjects) => [...prevObjects,newObject])
   }
   return (
     <>

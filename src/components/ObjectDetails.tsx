@@ -17,13 +17,6 @@ export default function ObjectDetails({object}: ObjectDetalisProps) {
         <section className="object-details">
             <h2>Panel obserwacyjny anomalii</h2>
                 <div className={"card-details"} style={{ border: '1px solid #333', padding: '20px', borderRadius: '12px' }}>
-                    <img src={object.image} alt={object.name} style={{
-                        width:'100%',
-                        maxHeight:'300px',
-                        objectFit:'cover',
-                        borderRadius: '8px',
-                        marginBottom: '15px',
-                    }}/>
                         <h3 style={{fontSize: '1.8rem',margin: '0 0 10px 0'}}>{object.name}</h3>
                         <p style={{ margin: '5px 0' }}>
                             <strong>Typ obiektu:</strong> <span style={{ color: '#4a90e2' }}>{object.type}</span>
@@ -32,6 +25,22 @@ export default function ObjectDetails({object}: ObjectDetalisProps) {
                         <p style={{ margin: '5px 0' }}>
                             <strong>Dystans od Ziemi:</strong> {object.distance}
                         </p>
+
+                    <p style={{ margin: '15px 0 0 0', paddingTop: '15px', borderTop: '1px solid #222' }}>
+                        <strong>Dokumentacja fotograficzna:</strong>{' '}
+                        <a
+                            href={object.image}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                color: '#4a90e2',
+                                textDecoration: 'underline',
+                                fontWeight: 'bold'
+                            }}
+                        >
+                            Otwórz zewnętrzne źródło obrazu ↗
+                        </a>
+                    </p>
                 </div>
         </section>
     )
