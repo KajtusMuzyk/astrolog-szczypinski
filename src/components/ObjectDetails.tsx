@@ -16,10 +16,10 @@ export default function ObjectDetails({object}: ObjectDetalisProps) {
     return (
         <section className="object-details">
             <h2>Panel obserwacyjny anomalii</h2>
-                <div className={"card-details"} style={{ border: '1px solid #333', padding: '20px', borderRadius: '12px' }}>
-                        <h3 style={{fontSize: '1.8rem',margin: '0 0 10px 0'}}>{object.name}</h3>
+                <div className={"card-details"} style={{ border: '1px solid #333', padding: '20px', borderRadius: '12px',height: '250px' }}>
+                        <h3 style={{fontSize: '1.3rem',margin: '0 0 10px 0'}}>{object.name}</h3>
                         <p style={{ margin: '5px 0' }}>
-                            <strong>Typ obiektu:</strong> <span style={{ color: '#4a90e2' }}>{object.type}</span>
+                            <strong style={{fontSize: '0.8rem'}}>Typ obiektu:</strong> <span style={{ color: '#4a90e2', fontSize: '0.8rem' }}>{object.type}</span>
                         </p>
 
                         <p style={{ margin: '5px 0' }}>

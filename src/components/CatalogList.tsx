@@ -17,7 +17,6 @@ export default function CatalogList({objects, onSelectObject}: CatalogListProps)
                             alignItems: 'center',
                             gap: '15px',
                             padding: '10px',
-                            borderBottom: '1px solid #333',
                             cursor: 'pointer'
                         }}
                         >
