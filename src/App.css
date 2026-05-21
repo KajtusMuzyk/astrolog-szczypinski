@@ -18,10 +18,16 @@ body {
   box-sizing: border-box;
 }
 .catalog-list, .object-details, .discovery-form {
-  background-color: rgba(20, 20, 20, 0.75);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+          135deg,
+          rgba(21, 26, 48, 0.75) 0%,
+          rgba(10, 11, 16, 0.85) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(74, 144, 226, 0.15);
   border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
 }
 .catalog-list h2, .object-details h2, .discovery-form h2 {
   padding: 15px 20px;
