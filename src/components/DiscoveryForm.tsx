@@ -1,5 +1,6 @@
 import {useState, type FormEvent} from "react";
 import type {ObjectInfo} from "../App.tsx";
+import defaultImage from "../assets/notfound.png";
 
 interface DiscoveryFormProps {
     onAddObject: (newObjectInfo: ObjectInfo) => void;
@@ -18,7 +19,7 @@ export default function DiscoveryForm({ onAddObject }: DiscoveryFormProps) {
             name,
             type,
             distance,
-            image: image.trim() !== '' ? image : 'https://images.unsplash.com/photo-1594322436404-5a0526db4d13?w=1200&auto=format&fit=crop&q=80'
+            image: image.trim() !== '' ? image : defaultImage
         }
 
         onAddObject(newDiscovery);
